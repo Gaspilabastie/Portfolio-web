@@ -5,9 +5,6 @@
     <title>Portfolio Web</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- JS  src 
-    <script src="./main.js" defer></script>
-    -->
     <!-- Css src -->
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
@@ -20,24 +17,23 @@
 
 <body>
     <header>
-        <div>
-            <div id="icon">
-                <p id="G">G</p>
-                <p id="L">L</p>
+        <nav class="nav">
+            <div>
+                <div id="icon">
+                    <p id="G">G</p>
+                    <p id="L">L</p>
+                </div>
+                <div id="tags">
+                    <a href="#Home">Home</a>
+                    <a href="#About">About</a>
+                    <a href="#Skills">Skills</a>
+                    <a href="#Projects">Projects</a>
+                    <a href="#Contact">Contact</a>
+                </div>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#Home">Home</a></li>
-                    <li><a href="#About">About</a></li>
-                    <li><a href="#Resume">Resume</a></li>
-                    <li><a href="#Projects">Projects</a></li>
-                    <li><a href="#Contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+        </nav>
     </header>
-    <section id="Home_section">
-        <div id="Home"></div>
+    <section id="Home">
         <img src="./imagenes/computadora_fondo.jpg">
         <div id="background">
         </div>
@@ -46,9 +42,8 @@
             <p>Buenos Aires, Argentina</p>
         </div>
     </section>
-    <section id="About_section">
-        <div id="About"></div>
-        <img src="./imagenes/forma_2.png">
+    <section id="About">
+        <img src="./imagenes/forma_1.png">
         <div id="contenedor">
             <h2>Acerca de mi</h2>
             <div id="contenido_1">
@@ -64,22 +59,27 @@
             </div>
         </div>
     </section>
-    <section id="Resume_section">
-        <div id="Resume"></div>
-        <div>resume</div>
+    <section id="Skills">
+        <div>Skills</div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
         <div>CV</div>
     </section>
-    <section id="Projects_section">
-        <div id="Projects"></div>
+    <section id="Projects">
 
     </section>
-    <section id="Contact_section">
-        <div id="Contact"></div>
+    <section id="Contact">
 
     </section>
     <footer>
 
     </footer>
+    <!-- JS  src -->
+    <script type="text/javascript" src="./script.js"></script>
 </body>
 
 </html>
