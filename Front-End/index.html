@@ -8,10 +8,11 @@
     <!-- Css src -->
     <link rel="stylesheet" type="text/css" href="./normalize.css">
     <link rel="stylesheet" type="text/css" href="./style.css">
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Open+Sans:wght@300;500&family=Red+Hat+Display:wght@300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@200;300;400;500;600&family=Red+Hat+Display:wght@300&display=swap"
         rel="stylesheet">
 </head>
 
@@ -34,7 +35,7 @@
         </nav>
     </header>
     <section id="Home">
-        <img src="./imagenes/computadora_fondo.jpg">
+        <img src="./imagenes/background.jpg">
         <div id="background">
         </div>
         <div id="cuadrado">
@@ -44,7 +45,8 @@
     </section>
     <section id="About">
         <img src="./imagenes/forma_1.png">
-        <div id="contenedor">
+        <div class="container">
+            <div class="cian_box">About</div>
             <h2>Acerca de mi</h2>
             <div id="contenido_1">
                 <h3>print("Hola mundo! :D")</h3>
@@ -60,20 +62,86 @@
         </div>
     </section>
     <section id="Skills">
-        <div>Skills</div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div class="block"></div>
-        <div>CV</div>
-    </section>
-    <section id="Projects">
-
+        <div class="cian_box">Skills</div>
+        <h2>Mis habilidades</h2>
+        <div class="content">
+            <div class="block">
+                <h4>Graphic Design
+                </h4>
+                <img src="./imagenes/s_pincel.png" alt="pincel">
+                <p>a</p>
+            </div>
+            <div class="block">
+                <h4>Data science</h4>
+                <img src="./imagenes/s_grafico.png" alt="grafico">
+                <p>b</p>
+            </div>
+            <div class="block">
+                <h4>Front End</h4>
+                <img src="./imagenes/s_pantalla.png" alt="pantalla_f">
+                <p>c</p>
+            </div>
+            <div class="block">
+                <h4>Machine Learning</h4>
+                <img src="./imagenes/s_cerebro.png" alt="cerebro">
+                <p>d</p>
+            </div>
+            <div class="block">
+                <h4>Application Development</h4>
+                <img src="./imagenes/s_herramientas.png" alt="herramientas">
+                <p>e</p>
+            </div>
+            <div class="block">
+                <h4>Back End</h4>
+                <img src="./imagenes/s_pantalla-backend.png" alt="pantalla_b">
+                <p>f</p>
+            </div>
+        </div>
     </section>
     <section id="Contact">
-
+        <div id="contenedor_1">
+            <h2>Trabajemos juntos!</h2>
+            <div>
+                <p>Me encanta discutir nuevos proyectos y oportunidades. Compartí tanta información como sea posible
+                    para que podamos aprovechar al máximo nuestro primer contacto.</li>
+                <p class="bold">Mi teléfono</p>
+                <p>+ 54 2804 728183</p>
+                <p class="bold">Mi e-mail</p>
+                <p>gaspilabastie@gmail.com</p>
+            </div>
+            <div class="redes">
+                <a href="https://"><img src="./imagenes/ico-linkedin.png" alt="Linkedin"></a>
+                <a href="https://"><img src="./imagenes/ico-instagram.png" alt="Instagram"></a>
+                <a href="https://"><img src="./imagenes/ico-facebook.png" alt="Facebook"></a>
+                <a href="https://"><img src="./imagenes/ico-github.png" alt="GitHub"></a>
+                <a href="https://"><img src="./imagenes/ico-whatsapp.png" alt="Whatsapp"></a>
+            </div>
+        </div>
+        <div id="contenedor_2">
+            <div>
+                <form action="/send-email" method="POST">
+                    <label>Nombre</label>
+                    <div><input class="normal_input" type="text" name="nombre" placeholder="ingresa tu nombre">
+                    </div>
+                    <label>Email</label>
+                    <div><input class="normal_input" type="text" name="email" placeholder="ingresa tu email"></div>
+                    <label>Asunto</label>
+                    <div><input class="normal_input" type="text" name="asunto" placeholder="Escribe el asunto">
+                    </div>
+                    <label>Mensaje</label>
+                    <div id="mensaje">
+                        <textarea class="normal_input" name="mensaje"
+                            placeholder="Escribe tu mensaje aqui..."></textarea>
+                    </div>
+                    <div id="enviar">
+                        <div>
+                            <button type="submit">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+                <p>¡Gracias por tu mensaje!</p>
+            </div>
+        </div>
     </section>
     <footer>
 
