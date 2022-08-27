@@ -140,7 +140,7 @@ header nav a {
     overflow: hidden;
 }
 
-#About img{
+#About #image_1{
     position: absolute;
     z-index: 40;
     width: 50vh;
@@ -186,6 +186,16 @@ header nav a {
     width: 30%;
     height: 60%;
     float: left;
+}
+
+#About #contenido_2 #circle{
+    width: 50vh;
+    height: 50vh;
+    background-image: url(./imagenes/gaspar_foto_2.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    border-radius: 50%;
+    transform: rotate(-20deg);
 }
 
 #About #contenido_3 {
@@ -273,10 +283,44 @@ header nav a {
     margin-top: 2.5vh;
 }
 
+#Contact .redes {
+    height: 15%;
+}
+
+#Contact a {
+    width: 5%;
+}
+
 #Contact img {
     height: 5vh;
-    margin-right: 4vh;
     margin-top: 5vh;
+    margin-right: 4vh;
+    transition: all 0.3s;
+}
+
+#Contact #ico_linkedin:hover{
+    transform: scale(125%);
+    filter: invert(26%) sepia(100%) saturate(1556%) hue-rotate(177deg) brightness(93%) contrast(89%);
+}
+
+#Contact #ico_instagram:hover{
+    transform: scale(125%);
+    filter: invert(30%) sepia(16%) saturate(6787%) hue-rotate(296deg) brightness(93%) contrast(89%);
+}
+
+#Contact #ico_facebook:hover{
+    transform: scale(125%);
+    filter: invert(32%) sepia(9%) saturate(3302%) hue-rotate(183deg) brightness(98%) contrast(90%);
+}
+
+#Contact #ico_github:hover{
+    transform: scale(125%);
+    filter: invert(29%) sepia(6%) saturate(186%) hue-rotate(182deg) brightness(97%) contrast(93%);
+}
+
+#Contact #ico_whatsapp:hover{
+    transform: scale(125%);
+    filter: grayscale(100%) brightness(60%) sepia(300%) hue-rotate(50deg) saturate(500%);
 }
 
 #Contact #contenedor_2 {
@@ -341,7 +385,7 @@ header nav a {
     background-color: #00669E;
 }
 
-#Contact #mensaje>textarea {
+#Contact #mensaje textarea {
     height: 80px;
     display: inline-block;
     line-height: 16px;
@@ -386,6 +430,7 @@ header nav a {
 #Contact #contenedor_2 p {
     width: 80%;
     text-align: center;
+    font-weight: 600;
 }
 
 /*
