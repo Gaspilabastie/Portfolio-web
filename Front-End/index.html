@@ -12,12 +12,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Montserrat:wght@200;300;400;500;600&family=Red+Hat+Display:wght@300&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@300;400&family=Montserrat:wght@200;300;400;500;600&family=Red+Hat+Display:wght@300&display=swap"
         rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="noselect">
         <nav class="nav">
             <div>
                 <div id="icon">
@@ -28,13 +28,13 @@
                     <a href="#Home">Home</a>
                     <a href="#About">About</a>
                     <a href="#Skills">Skills</a>
-                    <a href="#Projects">Projects</a>
+                    <!-- <a href="#Projects">Projects</a> -->
                     <a href="#Contact">Contact</a>
                 </div>
             </div>
         </nav>
     </header>
-    <section id="Home">
+    <section id="Home" class="noselect">
         <img src="./imagenes/background.jpg">
         <div id="background">
         </div>
@@ -43,110 +43,125 @@
             <p>Buenos Aires, Argentina</p>
         </div>
     </section>
-    <section id="About">
-        <img id="image_1" src=./imagenes/forma_1.png>
+    <section id="About" class="noselect">
+        <div class="cian_box">About</div>
+        <img id="image_1" src=./imagenes/forma_1.png draggable="false">
         <div class="container">
-            <div class="cian_box">About</div>
             <h2>Acerca de mi</h2>
             <div id="contenido_1">
-                <h3>print("Hola mundo! :D")</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum et aliquam sint excepturi, cupiditate
-                    ipsa consectetur magni eius accusantium dolore inventore omnis ab quos, facilis incidunt? Quis ea
-                    pariatur quibusdam?</p>
+                <h3><b>print(</b>"Hola mundo! :D"<b>)</b></h3>
+                <p>Proactivo y enérgico. Me encanta aprender y busco siempre nuevos puntos de vista.
+                    <br>Soy muy dedicado y responsable, asi como apasionado por lo que hago.
+                    <br>
+                    <br>Programador, diseñador grafico y desarrollador web. Me interesan las inteligencias artificiales y el machine learning, y estoy estudiando Ciencias de Datos en la UBA.
+                    <br>
+                    <br>Nací en Bahía Blanca, me crié en Rawson Chubut, y ahora vivo en Buenos aires.
+                    <br>Me encanta hacer música y me gusta el game desing y la generación procedural de contenido.
+                </p>
             </div>
             <div id="contenido_2">
                 <div id="circle">
                 </div>
             </div>
             <div id="contenido_3">
-
+                <!-- CV -->
             </div>
         </div>
     </section>
-    <section id="Skills">
+    <section id="Skills" class="noselect">
         <div class="cian_box">Skills</div>
         <h2>Mis habilidades</h2>
         <div class="content">
-            <div class="block">
+            <div class="block left">
                 <h4>Graphic Design
                 </h4>
-                <img src="./imagenes/s_pincel.png" alt="pincel">
-                <p>a</p>
+                <img src="./imagenes/s_pincel.png" alt="pincel" draggable="false">
+                <p></p>
             </div>
-            <div class="block">
+            <div class="block center">
                 <h4>Data science</h4>
-                <img src="./imagenes/s_grafico.png" alt="grafico">
-                <p>b</p>
+                <img src="./imagenes/s_grafico.png" alt="grafico" draggable="false">
+                <p></p>
             </div>
-            <div class="block">
+            <div class="block right">
                 <h4>Front End</h4>
-                <img src="./imagenes/s_pantalla.png" alt="pantalla_f">
-                <p>c</p>
+                <img src="./imagenes/s_pantalla.png" alt="pantalla_f" draggable="false">
+                <p></p>
             </div>
-            <div class="block">
+            <div class="block left">
                 <h4>Machine Learning</h4>
-                <img src="./imagenes/s_cerebro.png" alt="cerebro">
-                <p>d</p>
+                <img src="./imagenes/s_cerebro.png" alt="cerebro" draggable="false">
+                <p></p>
             </div>
-            <div class="block">
+            <div class="block center">
                 <h4>Application Development</h4>
-                <img src="./imagenes/s_herramientas.png" alt="herramientas">
-                <p>e</p>
+                <img src="./imagenes/s_herramientas.png" alt="herramientas" draggable="false">
+                <p></p>
             </div>
-            <div class="block">
+            <div class="block right">
                 <h4>Back End</h4>
-                <img src="./imagenes/s_pantalla-backend.png" alt="pantalla_b">
-                <p>f</p>
+                <img src="./imagenes/s_pantalla-backend.png" alt="pantalla_b" draggable="false">
+                <p></p>
             </div>
         </div>
     </section>
+    <!--
+    <section id="Projects" class="noselect">
+    
+    </section>
+    -->
     <section id="Contact">
         <div id="contenedor_1">
-            <h2>Trabajemos juntos!</h2>
+            <h2 class="noselect">Trabajemos juntos!</h2>
             <div>
-                <p>Me encanta discutir nuevos proyectos y oportunidades. Compartí tanta información como sea posible
+                <p class="noselect">Me encanta discutir nuevos proyectos y oportunidades. Compartí tanta información como sea posible
                     para que podamos aprovechar al máximo nuestro primer contacto.</li>
-                <p class="bold">Mi teléfono</p>
+                <p class="bold noselect">Mi teléfono</p>
                 <p>+ 54 2804 728183</p>
-                <p class="bold">Mi e-mail</p>
+                <p class="bold noselect">Mi e-mail</p>
                 <p>gaspilabastie@gmail.com</p>
             </div>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/gaspar-labastie/" target="_blank"><img id="ico_linkedin" src="./imagenes/ico-linkedin.png" alt="Linkedin"></a>
-                <a href="https://www.instagram.com/gaspar_lab/" target="_blank"><img id="ico_instagram" src="./imagenes/ico-instagram.png" alt="Instagram"></a>
-                <a href="https://www.facebook.com/gaspar.labastie/" target="_blank"><img id="ico_facebook" src="./imagenes/ico-facebook.png" alt="Facebook"></a>
-                <a href="https://github.com/Gaspilabastie" target="_blank"><img id="ico_github" src="./imagenes/ico-github.png" alt="GitHub"></a>
-                <a href="https://wa.me/542804728183/" target="_blank"><img id="ico_whatsapp" src="./imagenes/ico-whatsapp.png" alt="Whatsapp"></a>
-            </div>
+
         </div>
         <div id="contenedor_2">
             <div>
                 <form action="/send-email" method="POST">
-                    <label>Nombre</label>
+                    <label class="noselect">Nombre</label>
                     <div><input class="normal_input" type="text" name="nombre" placeholder="ingresa tu nombre">
                     </div>
-                    <label>Email</label>
+                    <label class="noselect">Email</label>
                     <div><input class="normal_input" type="text" name="email" placeholder="ingresa tu email"></div>
-                    <label>Asunto</label>
+                    <label class="noselect">Asunto</label>
                     <div><input class="normal_input" type="text" name="asunto" placeholder="Escribe el asunto">
                     </div>
-                    <label>Mensaje</label>
+                    <label class="noselect">Mensaje</label>
                     <div id="mensaje">
                         <textarea class="normal_input" name="mensaje"
                             placeholder="Escribe tu mensaje aqui..."></textarea>
                     </div>
-                    <div id="enviar">
+                    <div id="enviar" class="noselect">
                         <div>
                             <button type="submit">Enviar</button>
                         </div>
                     </div>
                 </form>
-                <p class="bold">¡Gracias por tu mensaje!</p>
+                <p class="bold noselect">¡Gracias por tu mensaje!</p>
             </div>
         </div>
     </section>
-    <footer>
-
+    <footer class="noselect">
+        <div class="redes">
+            <a class="right" href="https://www.linkedin.com/in/gaspar-labastie/" target="_blank"><img id="ico_linkedin"
+                    src="./imagenes/ico-linkedin.png" alt="Linkedin"></a>
+            <a class="right" href="https://www.instagram.com/gaspar_lab/" target="_blank"><img id="ico_instagram"
+                    src="./imagenes/ico-instagram.png" alt="Instagram"></a>
+            <a class="right" href="https://www.facebook.com/gaspar.labastie/" target="_blank"><img id="ico_facebook"
+                    src="./imagenes/ico-facebook.png" alt="Facebook"></a>
+            <a class="right" href="https://github.com/Gaspilabastie" target="_blank"><img id="ico_github"
+                    src="./imagenes/ico-github.png" alt="GitHub"></a>
+            <a href="https://wa.me/542804728183/" target="_blank"><img id="ico_whatsapp"
+                    src="./imagenes/ico-whatsapp.png" alt="Whatsapp"></a>
+        </div>
     </footer>
     <!-- JS  src -->
     <script type="text/javascript" src="./script.js"></script>

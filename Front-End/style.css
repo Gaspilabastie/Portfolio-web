@@ -1,19 +1,38 @@
 body {
+    margin: 0;
+    padding: 0;
     font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     overflow-x: hidden;
-    margin: 0;
 
     --nav-height: 10vh;
     /*padding-top: var(--nav-height);*/
 }
 
-header, section, footer{
+html,
+header,
+section,
+footer {
     margin: 0;
     padding: 0;
 }
 
-header{
+.noselect {
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently supported by Chrome, Edge, Opera and Firefox */
+}
+
+header {
     background-color: #1f203a;
 }
 
@@ -31,7 +50,7 @@ header{
     transition: 0.5s;
 }
 
-.nav--hidden{
+.nav--hidden {
     transform: translateY(calc(-1 * var(--nav-height)));
     box-shadow: none;
     opacity: 0;
@@ -59,7 +78,7 @@ header #G {
     color: #259bca;
 }
 
-header .nav #tags{
+header .nav #tags {
     font-size: 3.5vh;
     position: absolute;
     top: 50%;
@@ -74,7 +93,7 @@ header nav a {
     font-weight: 500;
 }
 
-#Home{
+#Home {
     top: 0;
     width: 100%;
     height: 100vh;
@@ -85,7 +104,7 @@ header nav a {
     transform: translate(0, -10%);
 }
 
-#Home #background{
+#Home #background {
     position: absolute;
     width: 100%;
     height: 100vh;
@@ -95,7 +114,7 @@ header nav a {
     z-index: 20;
 }
 
-#Home #cuadrado{
+#Home #cuadrado {
     display: inline-block;
     width: 100%;
     height: 300px;
@@ -107,19 +126,19 @@ header nav a {
     z-index: 30;
 }
 
-#Home #cuadrado h1{
+#Home #cuadrado h1 {
     text-align: center;
     font-size: 15vh;
     color: #88d1ee;
 }
 
-#Home #cuadrado p{
+#Home #cuadrado p {
     text-align: center;
     font-size: 5vh;
     color: #fff;
 }
 
-.cian_box{
+.cian_box {
     background-color: blue;
     display: inline-block;
     position: absolute;
@@ -131,7 +150,7 @@ header nav a {
     font-weight: 400;
 }
 
-#About{
+#About {
     margin: 0;
     width: 100%;
     height: 100vh;
@@ -140,7 +159,7 @@ header nav a {
     overflow: hidden;
 }
 
-#About #image_1{
+#About #image_1 {
     position: absolute;
     z-index: 40;
     width: 50vh;
@@ -148,7 +167,7 @@ header nav a {
     top: -28.8vh;
 }
 
-#About .container{
+#About .container {
     width: 90%;
     height: 90%;
     position: absolute;
@@ -167,7 +186,7 @@ header nav a {
 }
 
 #About #contenido_1 {
-    width: 70%;
+    width: 60%;
     height: 60%;
     float: left;
 }
@@ -176,26 +195,43 @@ header nav a {
     margin-top: 5vh;
     font-size: 4vh;
     font-family: 'Inconsolata', monospace;
+    font-weight: 400;
+}
+
+#About #contenido_1 b {
+    color: #259bca;
+    font-weight: 300;
 }
 
 #About #contenido_1 p {
     margin-top: 2vh;
+    line-height: 4vh;
 }
 
 #About #contenido_2 {
-    width: 30%;
+    width: 40%;
     height: 60%;
     float: left;
+    position: relative;
 }
 
-#About #contenido_2 #circle{
+#About #contenido_2 #circle {
+    position: absolute;
+    top: -15%;
+    left: 50%;
     width: 50vh;
     height: 50vh;
     background-image: url(./imagenes/gaspar_foto_2.jpg);
     background-repeat: no-repeat;
     background-size: 100% auto;
     border-radius: 50%;
-    transform: rotate(-20deg);
+    transform: rotate(-20deg) translate(-50%);
+    transition: all 0.3s;
+}
+
+#About #contenido_2 #circle:hover {
+    transform: scale(110%) rotate(-20deg) translate(-45%);
+    box-shadow: 30px 30px #1f203a;
 }
 
 #About #contenido_3 {
@@ -204,14 +240,14 @@ header nav a {
     float: left;
 }
 
-#Skills{
+#Skills {
     width: 100%;
     height: 100vh;
     background-color: #f9f9f9;
     position: relative;
 }
 
-#Skills h2{
+#Skills h2 {
     text-align: center;
     margin: 0;
     padding-top: 13vh;
@@ -219,7 +255,7 @@ header nav a {
     font-size: 6vh;
 }
 
-#Skills .content{
+#Skills .content {
     width: 90%;
     position: absolute;
     top: 55%;
@@ -227,23 +263,30 @@ header nav a {
     transform: translate(-50%, -50%);
 }
 
-#Skills .block{
-    width: 30%;
+#Skills .block {
+    width: 20%;
     display: inline;
     float: left;
     text-align: center;
-    padding: 0 1.65%;
+    margin: 0 6.66%;
     margin-top: 5vh;
+    transition: all 0.2s;
 }
 
-#Skills img{
+#Skills .block:hover {
+    transform: scale(115%);
+    background-color: #f2f2f2;
+}
+
+#Skills img {
     height: 15vh;
 }
 
-#Contact{
+#Contact {
     width: 100%;
-    height: 100vh;
+    height: 85vh;
     background-color: #00669E;
+    display: block;
 }
 
 #Contact #contenedor_1 {
@@ -251,17 +294,16 @@ header nav a {
     width: 40%;
     color: #000;
     font-size: 60%;
-    line-height: 35px;
     font-weight: 750;
-    padding-top: 50px;
-    height: 600px;
+    height: 100%;
     margin-left: 10%;
     position: relative;
 }
 
 #Contact #contenedor_1 h2 {
     color: #fff;
-    margin-top: 2vh;
+    margin-top: 12vh;
+    margin-bottom: 9vh;
     font-size: 500%;
     font-weight: 600;
 }
@@ -280,52 +322,12 @@ header nav a {
 
 #Contact #contenedor_1 .bold {
     font-weight: 600;
-    margin-top: 2.5vh;
-}
-
-#Contact .redes {
-    height: 15%;
-}
-
-#Contact a {
-    width: 5%;
-}
-
-#Contact img {
-    height: 5vh;
     margin-top: 5vh;
-    margin-right: 4vh;
-    transition: all 0.3s;
-}
-
-#Contact #ico_linkedin:hover{
-    transform: scale(125%);
-    filter: invert(26%) sepia(100%) saturate(1556%) hue-rotate(177deg) brightness(93%) contrast(89%);
-}
-
-#Contact #ico_instagram:hover{
-    transform: scale(125%);
-    filter: invert(30%) sepia(16%) saturate(6787%) hue-rotate(296deg) brightness(93%) contrast(89%);
-}
-
-#Contact #ico_facebook:hover{
-    transform: scale(125%);
-    filter: invert(32%) sepia(9%) saturate(3302%) hue-rotate(183deg) brightness(98%) contrast(90%);
-}
-
-#Contact #ico_github:hover{
-    transform: scale(125%);
-    filter: invert(29%) sepia(6%) saturate(186%) hue-rotate(182deg) brightness(97%) contrast(93%);
-}
-
-#Contact #ico_whatsapp:hover{
-    transform: scale(125%);
-    filter: grayscale(100%) brightness(60%) sepia(300%) hue-rotate(50deg) saturate(500%);
 }
 
 #Contact #contenedor_2 {
-    padding-top: 100px;
-    height: 550px;
+    padding-top: 12vh;
+    height: 100%;
     width: 50%;
     float: left;
 }
@@ -338,7 +340,7 @@ header nav a {
 #Contact #contenedor_2 label,
 #Contact #contenedor_2 input {
     display: inline-block;
-    line-height: 35px;
+    line-height: 4vh;
 }
 
 #Contact #contenedor_2 label {
@@ -362,6 +364,7 @@ header nav a {
     background-color: #00669E;
     width: 80%;
     color: #000;
+    height: 6vh;
 }
 
 #Contact #contenedor_2 input:focus {
@@ -388,7 +391,7 @@ header nav a {
 #Contact #mensaje textarea {
     height: 80px;
     display: inline-block;
-    line-height: 16px;
+    line-height: 3.5vh;
     border: 0;
     margin-left: 10px;
     background-color: #00669E;
@@ -425,6 +428,8 @@ header nav a {
     color: #fff;
     font-weight: bold;
     font-size: 2.5vh;
+    padding: 0;
+    cursor: pointer;
 }
 
 #Contact #contenedor_2 p {
@@ -433,15 +438,65 @@ header nav a {
     font-weight: 600;
 }
 
+footer {
+    background-color: #000;
+    height: 15vh;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+footer .redes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+}
+
+footer .right {
+    margin-right: 10vh;
+}
+
+footer img {
+    height: 5vh;
+    transition: all 0.3s;
+}
+
+footer #ico_linkedin:hover {
+    transform: scale(125%);
+    filter: invert(26%) sepia(100%) saturate(1556%) hue-rotate(177deg) brightness(93%) contrast(89%);
+}
+
+footer #ico_instagram:hover {
+    transform: scale(125%);
+    filter: invert(30%) sepia(16%) saturate(6787%) hue-rotate(296deg) brightness(93%) contrast(89%);
+}
+
+footer #ico_facebook:hover {
+    transform: scale(125%);
+    filter: invert(32%) sepia(9%) saturate(3302%) hue-rotate(183deg) brightness(98%) contrast(90%);
+}
+
+footer #ico_github:hover {
+    transform: scale(125%);
+    filter: invert(29%) sepia(6%) saturate(186%) hue-rotate(182deg) brightness(97%) contrast(93%);
+}
+
+footer #ico_whatsapp:hover {
+    transform: scale(125%);
+    filter: grayscale(100%) brightness(60%) sepia(300%) hue-rotate(50deg) saturate(500%);
+}
+
 /*
 FONTS:
-font-family: 'Inconsolata', monospace;
-font-family: 'Montserrat', sans-serif;
-font-family: 'Red Hat Display', sans-serif;
+font-family: 'Inconsolata', monospace; 300;400
+font-family: 'Montserrat', sans-serif; 200;300;400;500;600
+font-family: 'Red Hat Display', sans-serif; 300
 
 COLORS:
 */
-#Color_list{
+#Color_list {
     color: #000;
     color: #1f203a;
     color: #00669E;
